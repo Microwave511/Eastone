@@ -1,54 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eastone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
+<!-- Header / Navbar -->
 <header>
-    <nav>
-        <img src="Images/DarkLogo.jpeg" width="100">
-        <div>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="services.html">Services</a>
-            <a href="providers.html">Service Providers</a>
-            <a href="about.html">About Us</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black px-4">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logos/DarkLogo.jpeg" alt="Eastone Logo" width="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="providers.html">Service Providers</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            </ul>
         </div>
     </nav>
 </header>
 
-<section class="hero">
-    <h2>Your Trusted Construction Supply Partner</h2>
-    <p>Supplying quality materials from trusted brands for your building needs.</p>
-</section>
+<main class="flex-grow-1">
 
-<section class="section">
-    <h2>Brands We Carry</h2>
-    <div class="card-container">
-        <div class="card">
-            <h3>Bostik</h3>
-            <p>Adhesives and sealants for construction applications.</p>
+    <!-- Hero Section -->
+    <section class="hero text-center text-black py-5" style="background-image: url('images/backgrounds/Background.png'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Your Trusted Construction Supply Partner</h1>
+            <p class="lead">Supplying quality materials from trusted brands for your building needs.</p>
         </div>
-        <div class="card">
-            <h3>Sika</h3>
-            <p>Specialty chemicals and waterproofing solutions.</p>
-        </div>
-        <div class="card">
-            <h3>Boysen</h3>
-            <p>High-quality architectural and industrial paints.</p>
-        </div>
-        <div class="card">
-            <h3>Creviseal</h3>
-            <p>Reliable waterproofing materials.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<footer>
-    <p>© 2026 Eastone</p>
+    <!-- Brands Section -->
+    <section class="section py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">Brands We Carry</h2>
+            <div class="row g-4">
+                <!-- Bostik Card -->
+                <div class="col-md-3">
+                    <a href="https://www.bostik.com/philippines/en/" target="_blank" class="text-decoration-none">
+                        <div class="card text-center bostik h-100">
+                            <img src="images/logos/Bostik.jpg" class="card-img-top p-3" alt="Bostik Products">
+                            <div class="card-body">
+                                <h5 class="card-title">Bostik</h5>
+                                <p class="card-text">Adhesives and sealants for construction applications.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Sika Card -->
+                <div class="col-md-3">
+                    <a href="https://phl.sika.com/" target="_blank" class="text-decoration-none">
+                        <div class="card text-center sika h-100">
+                            <img src="images/logos/Sika.jpeg" class="card-img-top p-3" alt="Sika Products">
+                            <div class="card-body">
+                                <h5 class="card-title">Sika</h5>
+                                <p class="card-text">Specialty chemicals and waterproofing solutions.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Boysen Card -->
+                <div class="col-md-3">
+                    <a href="https://www.boysen.com.ph/" target="_blank" class="text-decoration-none">
+                        <div class="card text-center boysen h-100">
+                            <img src="images/logos/Boysen.png" class="card-img-top p-3" alt="Boysen Products">
+                            <div class="card-body">
+                                <h5 class="card-title">Boysen</h5>
+                                <p class="card-text">High-quality architectural and industrial paints.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Creviseal Card -->
+                <div class="col-md-3">
+                    <a href="https://www.boysen.com.ph/" target="_blank" class="text-decoration-none">
+                        <div class="card text-center creviseal h-100">
+                            <img src="images/logos/Creviseal.png" class="card-img-top p-3" alt="Creviseal Products">
+                            <div class="card-body">
+                                <h5 class="card-title">Creviseal</h5>
+                                <p class="card-text">Reliable waterproofing materials.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services Section -->
+    <section class="services py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4 text-center">Services We Provide</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 text-center p-3">
+                        <h5 class="card-title">Construction Supplies</h5>
+                        <p class="card-text">Bulk material orders, brand distribution, and inventory availability for contractors and businesses.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 text-center p-3">
+                        <h5 class="card-title">Waterproofing Services</h5>
+                        <p class="card-text">Roof waterproofing, wall crack sealing, and concrete protection solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-auto">
+    <p>© 2026 Eastone | Developer: Your Name | Course: CS | Section: 1 | SY 2025-2026</p>
 </footer>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

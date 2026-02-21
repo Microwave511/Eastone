@@ -6,14 +6,14 @@
 }
 
 body {
-    background-color: #1583bc;
+    background-color: #2e99b9;
     color: #333;
 }
 
 header {
     background-color: #000000;
     color: white;
-    padding: 15px 40px;
+    padding: 5px 40px;
 }
 
 nav {
@@ -33,17 +33,19 @@ nav a:hover {
     color: #f0a500;
 }
 
-.hero {
-    background: #33b8ff;
-    padding: 60px 40px;
-    text-align: center;
-}
-
 .section {
     padding: 40px;
 }
+.section h1 {
+    color: white;
+    margin-bottom: 20px;
+}
 
-.section h2 {
+.services {
+    padding: 40px
+}
+.services h1 {
+    color: white;
     margin-bottom: 20px;
 }
 
@@ -54,7 +56,7 @@ nav a:hover {
 }
 
 .card {
-    background: white;
+    background: rgb(243, 253, 255);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -64,6 +66,16 @@ nav a:hover {
 .card:hover {
     transform: scale(1.03);
 }
+.card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.bostik { background-color: #282760; color: white; }
+.sika { background-color: #f7c600; color: black; }
+.boysen { background-color: #00533c; color: white; }
+.creviseal { background-color: white; color: black; }
 
 table {
     width: 100%;
@@ -90,5 +102,15 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 40px;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
 }
