@@ -6,12 +6,12 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #1583bc;
     color: #333;
 }
 
 header {
-    background-color: #1f2933;
+    background-color: #000000;
     color: white;
     padding: 15px 40px;
 }
@@ -34,7 +34,7 @@ nav a:hover {
 }
 
 .hero {
-    background: #e5e7eb;
+    background: #33b8ff;
     padding: 60px 40px;
     text-align: center;
 }
@@ -86,7 +86,7 @@ th {
 }
 
 footer {
-    background-color: #1f2933;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 15px;
