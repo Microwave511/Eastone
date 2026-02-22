@@ -5,11 +5,23 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: #2e99b9;
-    color: #333;
+/* BODY */
+html, body {
+    height: 100%;
 }
 
+body {
+    background-color: #ffffff; /* Neutral base */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* HEADER */
 header {
     background-color: #000000;
     color: white;
@@ -33,22 +45,83 @@ nav a:hover {
     color: #f0a500;
 }
 
-.section {
-    padding: 40px;
-}
-.section h1 {
-    color: white;
-    margin-bottom: 20px;
+/* HERO CAROUSEL */
+.carousel img {
+    height: 600px;
+    object-fit: cover;
+    width: 100%;
 }
 
-.services {
-    padding: 40px
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 20px;
+    border-radius: 10px;
+    bottom: 20%;
 }
+
+.carousel-caption h5,
+.carousel-caption h1 {
+    font-size: 2.5rem;
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/* IMAGE SECTION AFTER HERO */
+.image-section {
+    position: relative;
+    background: url("images/etc/Construction-Materials.jpg") center/cover no-repeat;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        #223868
+    );
+}
+
+.image-section .content {
+    position: relative;
+    color: white;
+    z-index: 1;
+}
+
+/* SERVICES SECTION (Controls Main Color After Image) */
+.services {
+    background-color: #223868;
+    padding: 60px 40px;
+}
+
 .services h1 {
     color: white;
     margin-bottom: 20px;
 }
 
+/* GENERAL SECTION */
+.section {
+    padding: 60px 40px;
+}
+
+.section h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* CARD GRID */
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -66,17 +139,21 @@ nav a:hover {
 .card:hover {
     transform: scale(1.03);
 }
+
 .card img {
     width: 100%;
-    height: 70%;
+    height: 200px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
 }
+
+/* BRAND COLORS */
 .bostik { background-color: #282760; color: white; }
 .sika { background-color: #ffc511; color: black; }
 .boysen { background-color: #00533c; color: white; }
 .creviseal { background-color: white; color: black; }
 
+/* TABLE */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -97,6 +174,39 @@ th {
     color: white;
 }
 
+/* DIAGONAL IMAGE RIGHT SLICE */
+.diagonal-img-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+/* DIAGONAL IMAGE LEFT SLICE */
+.diagonal-img-wrapper-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* FEATURE SECTION */
+.feature-section {
+    background-color: #2e99b9;
+}
+
+.feature-section h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.feature-section p {
+    color: rgb(219, 219, 219);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
 footer {
     background-color: #000000;
     color: white;
@@ -104,62 +214,49 @@ footer {
     padding: 15px;
 }
 
-html, body {
-    height: 100%;
-}
-body {
-    display: flex;
-    flex-direction: column;
-}
-main {
-    flex: 1;
-}
-
-.carousel img {
-    max-height: 400px;   /* adjust as needed */
-    object-fit: cover;   /* fills the container nicely */
-    width: 100%;         /* full width */
-}
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
-    padding: 20px;
-    border-radius: 10px;
-    bottom: 20px; /* distance from bottom */
-}
-.carousel-caption h5 {
-    font-size: 1.8rem;
-}
-.carousel-caption p {
-    font-size: 1rem;
-}
-.diagonal-img-wrapper img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    /* Clip the right side diagonally */
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-}
-.diagonal-img-wrapper-left img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    /* Clip the right side diagonally */
-    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-}
-.feature-section {
-    background-color: #f8f9fa; /* light gray background */
-}
-
-.feature-section h2 {
-    margin-bottom: 20px;
-}
-
-.feature-section p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
+/* RESPONSIVE */
 @media (max-width: 768px) {
-    .diagonal-img-wrapper img {
-        clip-path: none; /* remove diagonal on mobile */
+    .carousel img {
+        height: 400px;
     }
+
+    .carousel-caption h5,
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .diagonal-img-wrapper img,
+    .diagonal-img-wrapper-left img {
+        clip-path: none;
+    }
+
+    .image-section {
+        min-height: 350px;
+    }
+}
+
+/* BRANDS SECTION BACKGROUND */
+.brands-section {
+    position: relative;
+    background: url("images/backgrounds/Background.png") center/cover no-repeat;
+    padding: 80px 0;
+}
+
+.brands-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.brands-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.brands-section h2 {
+    color: black;
 }
