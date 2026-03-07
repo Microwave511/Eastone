@@ -1,51 +1,220 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eastone | Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100" id="top">
 
+<!-- Header -->
 <header>
-    <nav>
-        <h1>Services</h1>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="services.html">Services</a>
-            <a href="providers.html">Service Providers</a>
-            <a href="about.html">About Us</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black px-4">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logos/DarkLogo.jpeg" alt="Eastone Logo" width="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="providers.html">Service Providers</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            </ul>
         </div>
     </nav>
 </header>
 
-<section class="section">
-    <h2>Our Services</h2>
+<main class="flex-grow-1">
 
-    <div class="card-container">
-        <div class="card">
-            <h3>Construction Supplies</h3>
-            <ul>
-                <li>Bulk material orders</li>
-                <li>Brand distribution</li>
-                <li>Inventory availability</li>
-            </ul>
-        </div>
+<!-- HERO SECTION -->
+<section class="bg-dark text-white text-center py-5">
+    <div class="container">
+        <h1 class="fw-bold">Our Services</h1>
+        <p>Reliable, efficient, and built to last.</p>
+    </div>
+</section>
 
-        <div class="card">
-            <h3>Waterproofing Services</h3>
-            <ul>
-                <li>Roof waterproofing</li>
-                <li>Wall crack sealing</li>
-                <li>Concrete protection</li>
-            </ul>
+<!-- SERVICES CARDS -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- Construction Materials -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="images/etc/Construction-Materials.jpg" class="card-img-top" alt="Construction Materials">
+                    <div class="card-body">
+                        <h5 class="card-title">Construction Materials</h5>
+                        <p class="card-text">
+                            We supply you with high-quality construction materials from trusted brands.
+                            We provide adhesives, sealants, waterproofing, and paint, even delivering
+                            these materials to wherever you want.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Waterproofing -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="images/etc/waterproofing.webp" class="card-img-top" alt="Waterproofing Service">
+                    <div class="card-body">
+                        <h5 class="card-title">Waterproofing</h5>
+                        <p class="card-text">
+                            We provide waterproofing services that will protect your roofs and walls
+                            against leaks and moisture damage. Strenghtening your building's
+                            resilience to weather conditions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Estimates -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="images/etc/Project-Estimating.jpg" class="card-img-top" alt="Project Estimates">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Estimates</h5>
+                        <p class="card-text">
+                             We help you plan your construction projects and give you an accurate
+                             price estimate for materials. Giving efficient and informed budget
+                             decisions to contractors and homeowners for better planning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
-<footer>
-    <p>© 2026 Eastone</p>
+<!-- COMMUNITY SERVICES LIST -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Community Services</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Services for Homeowners</h5>
+                <ul>
+                    <li>Waterproofing installation</li>
+                    <li>Roof leak inspection</li>
+                    <li>Wall crack sealing</li>
+                    <li>Material delivery service</li>
+                    <li>Project cost estimation</li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <h5>Services for Contractors</h5>
+                <ol>
+                    <li>Bulk material supply</li>
+                    <li>On-site technical assistance</li>
+                    <li>Waterproofing system application</li>
+                    <li>Material recommendations</li>
+                    <li>Detailed budget planning</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES TABLE -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Service Overview</h2>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Construction Materials</td>
+                        <td>Supply of trusted construction brands and materials</td>
+                        <td>Available Daily</td>
+                    </tr>
+                    <tr>
+                        <td>Waterproofing</td>
+                        <td>Professional installation and moisture protection</td>
+                        <td>By Appointment</td>
+                    </tr>
+                    <tr>
+                        <td>Project Estimates</td>
+                        <td>Accurate pricing and budget planning</td>
+                        <td>Walk-in & Online</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- IMAGE MAP SECTION -->
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Explore Our Services</h2>
+
+        <img src="images/etc/Construction-Materials.jpg" 
+             alt="Service Map"
+             class="img-fluid"
+             usemap="#servicemap">
+
+        <map name="servicemap">
+            <area shape="rect" coords="0,0,500,300" 
+                  href="products.html" 
+                  alt="Construction Materials">
+
+            <area shape="rect" coords="500,0,1000,300" 
+                  href="services.html" 
+                  alt="Waterproofing">
+
+            <area shape="rect" coords="250,300,750,600" 
+                  href="about.html" 
+                  alt="Project Estimates">
+        </map>
+
+        <p class="mt-3">
+            Click different sections of the image to navigate to related pages.
+        </p>
+    </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-black text-white py-4 mt-auto">
+  <div class="container text-center">
+    <h5>Site Map</h5>
+    <p>
+      <a href="index.html" class="text-white text-decoration-none">Home</a> |
+      <a href="products.html" class="text-white text-decoration-none">Products</a> |
+      <a href="services.html" class="text-white text-decoration-none">Services</a> |
+      <a href="providers.html" class="text-white text-decoration-none">Service Providers</a> |
+      <a href="about.html" class="text-white text-decoration-none">About Us</a>
+    </p>
+
+    <p class="mb-0">Developer: Ramon T. Fernandez IV</p>
+    <p class="mb-0">Course & Section: BSCS BM14</p>
+    <p class="mb-0">School Year: 2025–2026</p>
+  </div>
 </footer>
 
+<a href="#top" class="btn btn-primary position-fixed bottom-0 end-0 me-3">
+    ↑ Top
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

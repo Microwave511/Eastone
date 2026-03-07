@@ -260,3 +260,70 @@ footer {
 .brands-section h2 {
     color: black;
 }
+/* Hover effect for Provider Gallery [cite: 27] */
+.provider-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.provider-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Styled Form Focus [cite: 31] */
+.form-control:focus {
+    border-color: #f0a500;
+    box-shadow: 0 0 0 0.25rem rgba(240, 165, 0, 0.25);
+}
+/* Zoom effect on images inside provider cards */
+.hover-zoom {
+    transition: transform 0.5s ease;
+}
+
+.provider-card:hover .hover-zoom {
+    transform: scale(1.1);
+}
+
+/* Card lift animation */
+.provider-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.provider-card:hover {
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+/* Modal styling for the "Lightbox" effect */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+/* Container for the circular image to ensure it stays a circle */
+.member-img-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.team-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This prevents the face from looking stretched */
+}
+
+/* Hover effect: The circle grows and the border changes color */
+.team-card:hover .member-img-container {
+    transform: scale(1.1);
+    border-color: #007bff; /* Matches your primary blue */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.x-small {
+    font-size: 0.85rem;
+}

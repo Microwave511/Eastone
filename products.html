@@ -1,60 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Products</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eastone | Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
 <header>
-    <nav>
-        <h1>Products</h1>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="services.html">Services</a>
-            <a href="providers.html">Service Providers</a>
-            <a href="about.html">About Us</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black px-4">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logos/DarkLogo.jpeg" alt="Eastone Logo" width="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="providers.html">Service Providers</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            </ul>
         </div>
     </nav>
 </header>
 
-<section class="section">
-    <h2>Available Brands</h2>
+<main class="flex-grow-1">
+    <section class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1 class="fw-bold">Our Product Catalog</h1>
+            <p>High-quality materials from the industry's leading brands.</p>
+        </div>
+    </section>
 
-    <table>
-        <tr>
-            <th>Brand</th>
-            <th>Product Type</th>
-            <th>Use</th>
-        </tr>
-        <tr>
-            <td>Bostik</td>
-            <td>Adhesives & Sealants</td>
-            <td>Bonding and sealing</td>
-        </tr>
-        <tr>
-            <td>Sika</td>
-            <td>Construction Chemicals</td>
-            <td>Concrete and waterproofing</td>
-        </tr>
-        <tr>
-            <td>Boysen</td>
-            <td>Paints</td>
-            <td>Interior and exterior finishing</td>
-        </tr>
-        <tr>
-            <td>Creviseal</td>
-            <td>Waterproofing</td>
-            <td>Roof and wall protection</td>
-        </tr>
-    </table>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="mb-4">Available Brands & Applications</h2>
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered shadow-sm">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Brand</th>
+                            <th>Category</th>
+                            <th>Primary Use Case</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Bostik</strong></td>
+                            <td>Adhesives & Sealants</td>
+                            <td>Industrial bonding and joint sealing</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sika</strong></td>
+                            <td>Construction Chemicals</td>
+                            <td>Concrete additives and professional waterproofing</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Boysen</strong></td>
+                            <td>Architectural Paints</td>
+                            <td>Interior and exterior surface finishing</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Creviseal</strong></td>
+                            <td>Waterproofing Systems</td>
+                            <td>Roofing and structural moisture protection</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
-</section>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Essential Supplies</h3>
+                    <ul class="list-group shadow-sm">
+                        <li class="list-group-item">Polyurethane Sealants</li>
+                        <li class="list-group-item">Cementitious Waterproofing</li>
+                        <li class="list-group-item">Epoxy Injection Resins</li>
+                        <li class="list-group-item">Tile Adhesives</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Finishing Materials</h3>
+                    <ul class="list-group shadow-sm">
+                        <li class="list-group-item">Acrylic Emulsion Paints</li>
+                        <li class="list-group-item">Roof Coatings</li>
+                        <li class="list-group-item">Surface Primers</li>
+                        <li class="list-group-item">Wall Putty & Fillers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-<footer>
-    <p>© 2026 Eastone</p>
+<footer class="bg-black text-white py-4 mt-auto">
+    <div class="container text-center">
+        <h5>Site Map</h5>
+        <p>
+            <a href="index.html" class="text-white text-decoration-none">Home</a> |
+            <a href="products.html" class="text-white text-decoration-none">Products</a> |
+            <a href="services.html" class="text-white text-decoration-none">Services</a> |
+            <a href="providers.html" class="text-white text-decoration-none">Service Providers</a> |
+            <a href="about.html" class="text-white text-decoration-none">About Us</a>
+        </p>
+        <p class="mb-0">Developer: Ramon T. Fernandez IV</p>
+        <p class="mb-0">Course & Section: BSCS BM14</p>
+        <p class="mb-0">School Year: 2025–2026</p>
+    </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,49 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Service Providers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eastone | Service Providers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
 <header>
-    <nav>
-        <h1>Service Providers</h1>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="services.html">Services</a>
-            <a href="providers.html">Service Providers</a>
-            <a href="about.html">About Us</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black px-4">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logos/DarkLogo.jpeg" alt="Eastone Logo" width="100">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link active" href="providers.html">Service Providers</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            </ul>
         </div>
     </nav>
 </header>
 
-<section class="section">
-    <h2>Contact Our Team</h2>
+<main class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Our Service Specialists</h2>
+        <p class="text-muted">Meet the expert teams behind our high-quality construction and waterproofing solutions.</p>
+    </div>
 
-    <table>
-        <tr>
-            <th>Role</th>
-            <th>Email</th>
-            <th>Phone</th>
-        </tr>
-        <tr>
-            <td>Sales Representative</td>
-            <td>sales@example.com</td>
-            <td>09XXXXXXXXX</td>
-        </tr>
-        <tr>
-            <td>Operations Manager</td>
-            <td>operations@example.com</td>
-            <td>09XXXXXXXXX</td>
-        </tr>
-    </table>
-</section>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 provider-card shadow border-0" data-bs-toggle="modal" data-bs-target="#modalWaterproofing">
+                <div class="overflow-hidden">
+                    <img src="images/etc/waterproofing.webp" class="card-img-top hover-zoom" alt="Waterproofing Team">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Waterproofing Solutions Team</h5>
+                    <p class="card-text text-muted">Experts in roof sealing, basement tanking, and injection grouting for leak repairs.</p>
+                    <span class="btn btn-outline-primary btn-sm">View Details</span>
+                </div>
+            </div>
+        </div>
 
-<footer>
-    <p>© 2026 Eastone</p>
+        <div class="col-md-4">
+            <div class="card h-100 provider-card shadow border-0" data-bs-toggle="modal" data-bs-target="#modalMaterials">
+                <div class="overflow-hidden">
+                    <img src="images/etc/Construction-Materials.jpg" class="card-img-top hover-zoom" alt="Material Consultants">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Material Selection Experts</h5>
+                    <p class="card-text text-muted">On-site technical advisors helping you choose the right Sika or Bostik products for your project.</p>
+                    <span class="btn btn-outline-primary btn-sm">View Details</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 provider-card shadow border-0" data-bs-toggle="modal" data-bs-target="#modalEstimates">
+                <div class="overflow-hidden">
+                    <img src="images/etc/Project-Estimating.jpg" class="card-img-top hover-zoom" alt="Project Estimators">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Budget & Planning Unit</h5>
+                    <p class="card-text text-muted">Specialists in calculating material quantities and providing cost-effective project timelines.</p>
+                    <span class="btn btn-outline-primary btn-sm">View Details</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalWaterproofing" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Waterproofing Team Gallery</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/etc/waterproofing.webp" class="img-fluid rounded mb-3" alt="Waterproofing">
+                    <p>Our team uses industry-standard membrane and liquid-applied systems to ensure 100% moisture protection.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="modalMaterials" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Material Consultants Gallery</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/etc/Construction-Materials.jpg" class="img-fluid rounded mb-3" alt="Materials">
+                    <p>Certified advisors who bridge the gap between manufacturer specifications and local site conditions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-black text-white py-4 mt-auto">
+  <div class="container text-center">
+    <h5>Site Map</h5>
+    <p>
+      <a href="index.html" class="text-white text-decoration-none">Home</a> |
+      <a href="products.html" class="text-white text-decoration-none">Products</a> |
+      <a href="services.html" class="text-white text-decoration-none">Services</a> |
+      <a href="providers.html" class="text-white text-decoration-none">Service Providers</a> |
+      <a href="about.html" class="text-white text-decoration-none">About Us</a>
+    </p>
+
+    <p class="mb-0">Developer: Ramon T. Fernandez IV</p>
+    <p class="mb-0">Course & Section: BSCS BM14</p>
+    <p class="mb-0">School Year: 2025–2026</p>
+  </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
